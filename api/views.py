@@ -15,3 +15,10 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class =  GroupSerializer
+
+class PlayerViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allow player to be viewed or edited
+    """
+    queryset = Player.objects.all()
+    serializer_class = PlayerSerializer
