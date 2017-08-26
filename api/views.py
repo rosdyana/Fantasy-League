@@ -22,3 +22,10 @@ class PlayerViewSet(viewsets.ModelViewSet):
     """
     queryset = Player.objects.all()
     serializer_class = PlayerSerializer
+
+class GoalKeeperViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allow goalkeeper to be viewed or edited
+    """
+    queryset = GoalKeeper.objects.all()
+    serializer_class = GoalKeeperSerializer
