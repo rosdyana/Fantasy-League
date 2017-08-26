@@ -21,3 +21,8 @@ class GoalKeeperSerializer(serializers.ModelSerializer):
     class Meta:
         model = GoalKeeper
         fields = '__all__'
+
+class MatchSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Match
+        fields =  '__all__'

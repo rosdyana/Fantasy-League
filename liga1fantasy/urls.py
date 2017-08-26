@@ -23,6 +23,7 @@ router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'players', views.PlayerViewSet)
 router.register(r'goalkeeper', views.GoalKeeperViewSet)
+router.register(r'match', views.MatchViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
